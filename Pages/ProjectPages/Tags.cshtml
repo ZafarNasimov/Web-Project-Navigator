@@ -1,0 +1,42 @@
+﻿@page
+@model WebProjectNavigator.Pages.ProjectPages.RatingsModel
+@{
+    ViewData["Title"] = "Tags Page";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ratings Report</title>
+</head>
+<body>
+
+    <div>
+        <ul class="nav">
+            <li class="nav-item">
+                <a class="nav-link btn-primary" href="#table" id="tableLink" onclick="displayTagsDataInTable()">Table</a>
+            </li>
+        </ul>
+    </div>
+
+    <a asp-page="/Index" type="button" class="btn btn-primary backButton">Back</a>
+
+    <div class="styled-table">
+        <table id="Table" class="hidden-table">
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Name</th>
+                    <th>Value</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+
+    <script src="/Scripts/tags.js"></script>
+
+</body>
+</html>

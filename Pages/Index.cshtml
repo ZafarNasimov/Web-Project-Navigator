@@ -1,0 +1,25 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]</title>
+</head>
+<body>
+
+    <div class="button-container mt-3">
+        <a asp-page="./ProjectPages/Duration" type="button" class="btn btn-primary">Duration</a>
+        <a asp-page="./ProjectPages/Ratings" type="button" class="btn btn-primary">Ratings</a>
+        <a asp-page="./ProjectPages/ResponseTime" type="button" class="btn btn-primary">Response Time</a>
+        <a asp-page="./ProjectPages/Tags" type="button" class="btn btn-primary">Tags</a>
+        <a asp-page="./ProjectPages/TotalChats" type="button" class="btn btn-primary">Total Chats</a>
+    </div>
+
+</body>
+</html>
