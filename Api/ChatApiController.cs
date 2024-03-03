@@ -1,7 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using System.IO;
 using Newtonsoft.Json;
-using WebProjectNavigator.Models;
 
 namespace WebProjectNavigator.Controllers
 {

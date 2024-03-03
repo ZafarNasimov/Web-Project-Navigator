@@ -1,6 +1,4 @@
-﻿using System.Text.Json.Serialization;
-using System.Collections.Specialized;
-using WebProjectNavigator.Models;
+﻿using WebProjectNavigator.Models;
 using Newtonsoft.Json;
 
 public class Rating : BaseModel

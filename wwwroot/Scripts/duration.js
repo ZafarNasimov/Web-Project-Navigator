@@ -3,7 +3,7 @@ const durationColumnNames = ['agents_chatting_duration', 'count', 'duration'];
 
 document.addEventListener('DOMContentLoaded', async function () {
     try {
-        durationData = await fetchInitialData("https://localhost:7146/api/Duration", durationData);
+        durationData = await fetchInitialData("http://localhost:5262/api/Duration", durationData);
 
         console.log(durationData);
 

@@ -3,7 +3,7 @@ const ratingColumnNames = ['bad', 'chats', 'good'];
 
 document.addEventListener('DOMContentLoaded', async function () {
     try {
-        ratingData = await fetchInitialData("https://localhost:7146/api/Ratings", ratingData);
+        ratingData = await fetchInitialData("http://localhost:5262/api/Ratings", ratingData);
 
         const weeksCount = calculateWeeksCount(ratingData);
         for (let i = 1; i <= weeksCount; i++) {

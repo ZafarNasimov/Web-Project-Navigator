@@ -1,5 +1,4 @@
-﻿using System.Text.Json.Serialization;
-using WebProjectNavigator.Models;
+﻿using WebProjectNavigator.Models;
 using Newtonsoft.Json;
 
 public class TotalChats : BaseModel

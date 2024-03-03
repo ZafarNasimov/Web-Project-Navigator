@@ -3,7 +3,7 @@ const chatsColumnNames = ['total'];
 
 document.addEventListener('DOMContentLoaded', async function () {
     try {
-        totalChatsData = await fetchInitialData("https://localhost:7146/api/TotalChats", totalChatsData);
+        totalChatsData = await fetchInitialData("http://localhost:5262/api/TotalChats", totalChatsData);
 
         const weeksCount = calculateWeeksCount(totalChatsData);
         for (let i = 1; i <= weeksCount; i++) {

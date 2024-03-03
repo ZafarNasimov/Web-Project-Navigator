@@ -135,7 +135,7 @@ function createTagsNavLink(weekNumber) {
 
 document.addEventListener('DOMContentLoaded', async function () {
     try {
-        tagsData = await fetchInitialData("https://localhost:7146/api/Tags", tagsData);
+        tagsData = await fetchInitialData("http://localhost:5262/api/Tags", tagsData);
 
         const weeksCount = calculateWeeksCount(tagsData);
         for (let i = 1; i <= weeksCount; i++) {
